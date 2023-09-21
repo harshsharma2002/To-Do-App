@@ -16,10 +16,6 @@ function input() {
       }
       axios.post('http://localhost:3001/posttodo',data)
       .then(settodo((prevTodos) => [...prevTodos, data]))
-      .then( () => {
-        settitle('');
-        setdesc('');
-      });
     }
 
 
